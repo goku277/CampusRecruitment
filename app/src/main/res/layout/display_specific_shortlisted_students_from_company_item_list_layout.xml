@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="1dp"
+    android:layout_height="wrap_content">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="206dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="382dp"
+                    android:layout_height="match_parent"
+                    android:padding="12dp">
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/cig_id"
+                        android:layout_width="97dp"
+                        android:layout_height="93dp"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                        app:layout_constraintHorizontal_bias="0.516"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/univ_id"
+                        android:layout_width="174dp"
+                        android:layout_height="52dp"
+                        android:fontFamily="cursive"
+                        android:gravity="center_horizontal"
+                        android:text="University name"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/guideline3"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/reg_no_id"
+                        android:layout_width="177dp"
+                        android:layout_height="33dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="cursive"
+                        android:gravity="center_horizontal"
+                        android:text="Registration number"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.272"
+                        app:layout_constraintStart_toStartOf="@+id/univ_id"
+                        app:layout_constraintTop_toBottomOf="@+id/univ_id" />
+
+                    <TextView
+                        android:id="@+id/ten_id"
+                        android:layout_width="79dp"
+                        android:layout_height="26dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="cursive"
+                        android:text="10th%"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/reg_no_id"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/reg_no_id"
+                        app:layout_constraintTop_toBottomOf="@+id/reg_no_id" />
+
+                    <TextView
+                        android:id="@+id/twelve_id"
+                        android:layout_width="88dp"
+                        android:layout_height="30dp"
+                        android:fontFamily="cursive"
+                        android:text="12th%"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.448"
+                        app:layout_constraintStart_toEndOf="@+id/ten_id"
+                        app:layout_constraintTop_toTopOf="@+id/ten_id" />
+
+                    <TextView
+                        android:id="@+id/grad_id"
+                        android:layout_width="158dp"
+                        android:layout_height="29dp"
+                        android:layout_marginTop="4dp"
+                        android:fontFamily="cursive"
+                        android:text="Graduation%"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.073"
+                        app:layout_constraintStart_toStartOf="@+id/guideline3"
+                        app:layout_constraintTop_toBottomOf="@+id/twelve_id" />
+
+                    <TextView
+                        android:id="@+id/currentacademic_id"
+                        android:layout_width="159dp"
+                        android:layout_height="27dp"
+                        android:layout_marginTop="8dp"
+                        android:fontFamily="cursive"
+                        android:text="Current Academic"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="@+id/grad_id"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toStartOf="@+id/grad_id"
+                        app:layout_constraintTop_toBottomOf="@+id/grad_id" />
+
+                    <TextView
+                        android:id="@+id/keyskills_id"
+                        android:layout_width="153dp"
+                        android:layout_height="78dp"
+                        android:layout_marginStart="4dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="cursive"
+                        android:gravity="center_horizontal"
+                        android:text="Keyskills"
+                        android:textAlignment="center"
+                        android:textSize="15sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                        app:layout_constraintHorizontal_bias="1.0"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/cig_id" />
+
+                    <androidx.constraintlayout.widget.Guideline
+                        android:id="@+id/guideline3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        app:layout_constraintGuide_begin="156dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

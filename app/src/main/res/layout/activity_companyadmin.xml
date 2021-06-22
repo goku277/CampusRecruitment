@@ -1,0 +1,314 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    tools:context=".Main.Companyadmin">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="414dp"
+        android:layout_height="134dp"
+        android:background="#FFA000"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/scrollview">
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ScrollView
+        android:id="@+id/scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center_vertical"
+            android:padding="7dp">
+
+            <TextView
+                android:id="@+id/text_id_1"
+                android:layout_width="399dp"
+                android:layout_height="11dp"
+                android:layout_marginTop="116dp"
+                android:layout_marginEnd="4dp"
+                android:layout_marginRight="4dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.0"
+                app:layout_constraintStart_toStartOf="@+id/hello_world_id"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="165dp"
+                android:layout_height="166dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toStartOf="@+id/guideline"
+                app:layout_constraintStart_toStartOf="@+id/guideline5"
+                app:layout_constraintTop_toBottomOf="@+id/text_id_1">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/add_company_details_img_id"
+                        android:layout_width="152dp"
+                        android:layout_height="121dp"
+                        android:layout_marginTop="5dp"
+                        android:src="@drawable/enterprise"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/add_company_details_text_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Add Company Details"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/add_company_details_img_id" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_end="173dp" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="397dp"
+                app:layout_constraintGuide_percent="0.99" />
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="35dp"
+                app:layout_constraintGuide_percent="0.01" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView13"
+                android:layout_width="165dp"
+                android:layout_height="166dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="@+id/guideline"
+                app:layout_constraintTop_toTopOf="@+id/cardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/job_advertisement_img_id"
+                        android:layout_width="141dp"
+                        android:layout_height="129dp"
+                        android:src="@drawable/sign"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.666"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/post_job_advertisements_text_id"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Post Job Advertisements"
+                        android:textAlignment="center"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/job_advertisement_img_id" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView12"
+                android:layout_width="165dp"
+                android:layout_height="166dp"
+                android:layout_marginTop="24dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="5dp">
+
+                    <ImageView
+                        android:id="@+id/check_shortlisted_student_img_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="116dp"
+                        android:src="@drawable/student_icon"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/check_shortlisted_student_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Check Shortlisted Student"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/check_shortlisted_student_img_id" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/update_company_details_cv_id"
+                android:layout_width="165dp"
+                android:layout_height="166dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="5dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView13"
+                app:layout_constraintStart_toStartOf="@+id/cardView13"
+                app:layout_constraintTop_toTopOf="@+id/cardView12">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/update_company_details_img_id"
+                        android:layout_width="160dp"
+                        android:layout_height="122dp"
+                        android:src="@drawable/company"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/update_company_details_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="Update Company Details"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/update_company_details_img_id" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView14"
+                android:layout_width="165dp"
+                android:layout_height="166dp"
+                android:layout_marginTop="24dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/cardView12"
+                app:layout_constraintStart_toStartOf="@+id/cardView12"
+                app:layout_constraintTop_toBottomOf="@+id/cardView12">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/view_university_img_id"
+                        android:layout_width="162dp"
+                        android:layout_height="125dp"
+                        android:src="@drawable/university"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/view_university_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_horizontal"
+                        android:text="View University"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/view_university_img_id" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/card_view_22"
+                android:layout_width="165dp"
+                android:layout_height="166dp"
+                android:elevation="4dp"
+                app:cardCornerRadius="4dp"
+                app:layout_constraintEnd_toEndOf="@+id/update_company_details_cv_id"
+                app:layout_constraintStart_toStartOf="@+id/update_company_details_cv_id"
+                app:layout_constraintTop_toTopOf="@+id/cardView14">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/update_job_add_img_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="115dp"
+                        android:src="@drawable/jobs"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/update_job_add_text_id"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="16dp"
+                        android:gravity="center_horizontal"
+                        android:text="Update Job Add"
+                        android:textAlignment="center"
+                        app:layout_constraintTop_toBottomOf="@+id/update_job_add_img_id"
+                        tools:layout_editor_absoluteX="0dp" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/text_1_id"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:text=""
+                app:layout_constraintEnd_toEndOf="@+id/cardView"
+                app:layout_constraintStart_toStartOf="@+id/cardView"
+                app:layout_constraintTop_toBottomOf="@+id/cardView14" />
+
+            <ImageView
+                android:id="@+id/menu_id"
+                android:layout_width="24dp"
+                android:layout_height="35dp"
+                android:layout_marginTop="68dp"
+                android:src="@drawable/menu_1"
+                android:onClick="showPopup"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp"
+    tools:context=".Main.UpdateJobFromCompanyAdmin">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="34dp">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/company_name_id"
+                android:layout_width="146dp"
+                android:layout_height="47dp"
+                android:layout_marginTop="40dp"
+                android:fontFamily="cursive"
+                android:text="Company Name"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.543"
+                app:layout_constraintStart_toEndOf="@+id/textView22"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/choose_among_reference_ids_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                app:layout_constraintTop_toBottomOf="@+id/company_name_id" />
+
+            <EditText
+                android:id="@+id/qualification_id"
+                android:layout_width="158dp"
+                android:layout_height="61dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="cursive"
+                android:text="Qualification"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView23"
+                app:layout_constraintTop_toBottomOf="@+id/choose_among_reference_ids_id" />
+
+            <EditText
+                android:id="@+id/location_id"
+                android:layout_width="159dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="cursive"
+                android:text="Location"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/qualification_id"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView24"
+                app:layout_constraintTop_toBottomOf="@+id/qualification_id" />
+
+            <EditText
+                android:id="@+id/gap_id"
+                android:layout_width="159dp"
+                android:layout_height="67dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="cursive"
+                android:text="Gap"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/keyskills_id"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/keyskills_id"
+                app:layout_constraintTop_toBottomOf="@+id/keyskills_id" />
+
+            <EditText
+                android:id="@+id/tenth_id"
+                android:layout_width="154dp"
+                android:layout_height="62dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="cursive"
+                android:text="Tenth"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/gap_id"
+                app:layout_constraintHorizontal_bias="0.912"
+                app:layout_constraintStart_toEndOf="@+id/textView27"
+                app:layout_constraintTop_toBottomOf="@+id/gap_id" />
+
+            <EditText
+                android:id="@+id/twelvthhh_id"
+                android:layout_width="154dp"
+                android:layout_height="56dp"
+                android:layout_marginTop="20dp"
+                android:fontFamily="cursive"
+                android:text="Twelvth"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/tenth_id"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView28"
+                app:layout_constraintTop_toBottomOf="@+id/tenth_id" />
+
+            <EditText
+                android:id="@+id/currentacademic_id"
+                android:layout_width="152dp"
+                android:layout_height="53dp"
+                android:layout_marginTop="12dp"
+                android:fontFamily="cursive"
+                android:text="CurrentAcademic"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/twelvthhh_id"
+                app:layout_constraintHorizontal_bias="0.954"
+                app:layout_constraintStart_toEndOf="@+id/textView29"
+                app:layout_constraintTop_toBottomOf="@+id/twelvthhh_id" />
+
+            <EditText
+                android:id="@+id/keyskills_id"
+                android:layout_width="158dp"
+                android:layout_height="54dp"
+                android:layout_marginStart="76dp"
+                android:layout_marginLeft="76dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="cursive"
+                android:text="Keyskills"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/location_id"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toStartOf="@+id/location_id"
+                app:layout_constraintTop_toBottomOf="@+id/location_id" />
+
+
+            <EditText
+                android:id="@+id/ctc_id"
+                android:layout_width="152dp"
+                android:layout_height="69dp"
+                android:layout_marginTop="16dp"
+                android:fontFamily="cursive"
+                android:text="Expected CTC"
+                android:textColor="#000"
+                android:textSize="18sp"
+                app:layout_constraintEnd_toEndOf="@+id/currentacademic_id"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/textView30"
+                app:layout_constraintTop_toBottomOf="@+id/currentacademic_id" />
+
+            <ImageView
+                android:id="@+id/cig_id"
+                android:layout_width="100dp"
+                android:layout_height="91dp"
+                android:paddingTop="12dp"
+                android:src="@drawable/jobs"
+                app:layout_constraintBottom_toBottomOf="@+id/change_logo_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/change_logo_id" />
+
+            <Button
+                android:id="@+id/change_logo_id"
+                android:layout_width="165dp"
+                android:layout_height="41dp"
+                android:layout_marginTop="36dp"
+                android:background="#FF5722"
+                android:text="Change Logo"
+                android:textColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/cig_id"
+                app:layout_constraintTop_toBottomOf="@+id/ctc_id" />
+
+            <Button
+                android:id="@+id/update_job_add_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:background="#FF5722"
+                android:text="Update"
+                android:textColor="#ffffff"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cig_id" />
+
+            <TextView
+                android:id="@+id/textView22"
+                android:layout_width="108dp"
+                android:layout_height="35dp"
+                android:text="Company Name"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/company_name_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/company_name_id" />
+
+            <TextView
+                android:id="@+id/textView23"
+                android:layout_width="110dp"
+                android:layout_height="34dp"
+                android:text="Qualification"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/qualification_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/qualification_id" />
+
+            <TextView
+                android:id="@+id/textView24"
+                android:layout_width="104dp"
+                android:layout_height="28dp"
+                android:text="Location"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/location_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/location_id" />
+
+            <TextView
+                android:id="@+id/textView25"
+                android:layout_width="76dp"
+                android:layout_height="30dp"
+                android:text="Keyskills"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/keyskills_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/keyskills_id" />
+
+            <TextView
+                android:id="@+id/textView26"
+                android:layout_width="84dp"
+                android:layout_height="35dp"
+                android:text="Gap"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/gap_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/gap_id" />
+
+            <TextView
+                android:id="@+id/textView27"
+                android:layout_width="97dp"
+                android:layout_height="33dp"
+                android:text="Tenth"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/tenth_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/tenth_id" />
+
+            <TextView
+                android:id="@+id/textView28"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Twelvth"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/twelvthhh_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/twelvthhh_id" />
+
+            <TextView
+                android:id="@+id/textView29"
+                android:layout_width="114dp"
+                android:layout_height="34dp"
+                android:text="CurrentAcademic"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/currentacademic_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/currentacademic_id" />
+
+            <TextView
+                android:id="@+id/textView30"
+                android:layout_width="95dp"
+                android:layout_height="41dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:text="Expected CTC"
+                android:textColor="#000"
+                app:layout_constraintBottom_toBottomOf="@+id/ctc_id"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/ctc_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.pushpa.mycampusrecruitment">
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.SEND_SMS" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".Main.ViewUniversities" />
+        <activity
+            android:name=".Main.UpdateUniversityDetails"
+            android:label="Campus Recruitment" />
+        <activity android:name=".Main.DisplayCorrespondingJob"
+            android:label="Display corresponding job"/>
+        <activity
+            android:name=".Main.AddUniversityDetails"
+            android:label="Campus Recruitment" />
+        <activity
+            android:name=".Main.CheckShortlistedStudents"
+            android:label="Check Shortlisted Students" />
+        <activity android:name=".Main.CheckJobAdd"
+            android:label="Check job add"/>
+        <activity
+            android:name=".Main.UpdateStudentsDetailsForm"
+            android:label="Update stdent details form" />
+        <activity
+            android:name=".Main.AddStudentDetails"
+            android:label="Add student details" />
+        <activity android:name=".Main.PostJobAdvertisements"
+            android:label="Post job advertisement" />
+        <activity
+            android:name=".Main.Admin"
+            android:label="Admin" />
+        <activity
+            android:name=".Main.Companyadmin"
+            android:label="Company admin" />
+        <activity
+            android:name=".Main.Tpo"
+            android:label="Tpo" />
+        <activity
+            android:name=".Main.ShortListedStudentsFromCompany"
+            android:label="ShortListedStudentsFromCompany" />
+        <activity
+            android:name=".Main.DisplaySpecificShortListedStudent"
+            android:label="SDisplaySpecificShortListedStudents" />
+        <activity
+            android:name=".Credentials.Signup"
+            android:label="Signup" />
+        <activity
+            android:name=".Main.UpdateCompanyDetails"
+            android:label="Update company details" />
+        <activity
+            android:name=".Main.DisplayCorrespondingShortListedStudent"
+            android:label="Display Shortlisted students" />
+        <activity android:name=".Main.UpdateJobFromCompanyAdmin"
+            android:label="Update Job From Company Admin"/>
+        <activity
+            android:name=".Credentials.Signin"
+            android:label="Campus Recruitment">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+</manifest>

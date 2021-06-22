@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="25dp">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/cig_id"
+                android:layout_width="125dp"
+                android:layout_height="97dp"
+                android:layout_marginTop="48dp"
+                android:src="@drawable/company"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatSpinner
+                android:id="@+id/name_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:fontFamily="cursive"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/cig_id"
+                tools:layout_editor_absoluteX="0dp" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/location_id"
+                android:text="Location"
+                android:textColor="#000"
+                android:layout_marginTop="24dp"
+                android:fontFamily="cursive"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/name_id"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/total_id"
+                android:layout_marginTop="12dp"
+                android:text="Total Employees"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:fontFamily="cursive"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/location_id"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/years_id"
+                android:layout_marginTop="12dp"
+                android:text="Years of Establishment"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                app:layout_constraintTop_toBottomOf="@+id/total_id"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/achievements_id"
+                android:text="Achievents"
+                android:layout_marginTop="12dp"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:fontFamily="cursive"
+                app:layout_constraintTop_toBottomOf="@+id/years_id"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

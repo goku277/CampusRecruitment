@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <de.hdodenhof.circleimageview.CircleImageView
+                android:id="@+id/company_logo_id"
+                android:layout_width="92dp"
+                android:layout_height="100dp"
+                android:layout_marginTop="64dp"
+                android:src="@drawable/camera"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/company_name_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:hint="Company Name"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/company_logo_id" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:hint="Year of Estd."
+                android:layout_marginTop="11dp"
+                android:id="@+id/year_of_estd_id"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/company_name_id" />
+
+            <EditText
+                android:id="@+id/total_companies_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="11dp"
+                android:fontFamily="cursive"
+                android:hint="Total Companies"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/year_of_estd_id" />
+
+            <EditText
+                android:id="@+id/location_across_globe_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:layout_marginTop="11dp"
+                android:hint="Location across globe"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/total_companies_id" />
+
+            <EditText
+                android:id="@+id/awards_and_acheivents_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:layout_marginTop="11dp"
+                android:hint="Awards and Achievents"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/location_across_globe_id" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

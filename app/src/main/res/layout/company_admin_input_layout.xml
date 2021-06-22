@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:padding="15dp"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:gravity="start"
+                android:id="@+id/university_name_id"
+                android:hint="Company Name"
+                android:inputType="text"
+                android:paddingLeft="4dp"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <EditText
+                android:id="@+id/university_address_id"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="cursive"
+                android:gravity="start"
+                android:hint="Company Address"
+                android:inputType="textPostalAddress"
+                android:paddingLeft="4dp"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                app:layout_constraintTop_toBottomOf="@+id/university_name_id" />
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Compnay Contact No"
+                android:fontFamily="cursive"
+                android:id="@+id/university_contact_number_id"
+                android:gravity="start"
+                android:inputType="phone"
+                app:layout_constraintTop_toBottomOf="@+id/university_address_id"
+                android:paddingLeft="4dp"
+                android:textAlignment="textStart"
+                android:textColor="#000"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
